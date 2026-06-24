@@ -7,7 +7,7 @@ class ImagewebMacos < Formula
 
   depends_on :macos
   depends_on "node"
-  depends_on "swiftdialog"
+  depends_on cask: "swiftdialog"
 
   def install
     # Install image-web CLI from npm into formula-local prefix
