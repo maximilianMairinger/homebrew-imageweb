@@ -6,6 +6,7 @@ Homebrew tap for [imageWebMacGUI](https://github.com/maximilianMairinger/imageWe
 
 ```bash
 brew tap maximilianMairinger/imageweb
+brew trust maximilianMairinger/imageweb
 brew install imageweb-macos
 imageweb-setup
 ```
