@@ -10,7 +10,7 @@ brew install imageweb-macos
 imageweb-setup
 ```
 
-`imageweb-setup` registers the Quick Actions with Finder. Run it once after install.
+`brew install` pulls in `image-web` (the conversion CLI) and SwiftDialog (the dialog engine) automatically. `imageweb-setup` registers the Quick Actions with Finder — run it once after install.
 
 ## Uninstall
 

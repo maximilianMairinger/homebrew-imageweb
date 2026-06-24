@@ -6,8 +6,15 @@ class ImagewebMacos < Formula
   license "MIT"
 
   depends_on :macos
+  depends_on "node"
+  depends_on "swiftdialog"
 
   def install
+    # Install image-web CLI from npm into formula-local prefix
+    system "npm", "install", "-g", "--prefix", libexec/"npm", "image-web"
+    bin.install_symlink libexec/"npm/bin/image-web"
+
+    # Install Quick Actions scripts and workflows
     libexec.install Dir["*"]
 
     (bin/"imageweb-setup").write <<~EOS
